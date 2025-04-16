@@ -261,3 +261,9 @@ footer a.text-teal {
     from { transform: translateY(20px); opacity: 0; }
     to { transform: translateY(0); opacity: 1; }
 }
+
+/* Tambahkan aturan CSS untuk #loginPage di sini */
+#loginPage {
+    display: none;
+    margin-top: 80px; /* Sesuaikan nilai ini jika perlu */
+}
