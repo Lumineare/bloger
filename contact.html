@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak - Neo Blog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">Neo Blog</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">Tentang</a></li>
+                    <li><a href="#" class="active">Kontak</a></li>
+                    <li><a href="archive.html">Kategori</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <h2>Kontak Kami</h2>
+            <form id="contactForm">
+                <input type="text" id="contactName" placeholder="Nama" aria-label="Nama" required>
+                <input type="email" id="contactEmail" placeholder="Email" aria-label="Email" required>
+                <textarea id="contactMessage" placeholder="Pesan" aria-label="Pesan" required></textarea>
+                <button type="submit">Kirim</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <nav>
+                <a href="index.html">Home</a> |
+                <a href="about.html">Tentang</a> |
+                <a href="#" class="active">Kontak</a> |
+                <a href="archive.html">Kategori</a>
+            </nav>
+            <p>&copy; 2025 Neo Blog. All rights reserved.</p>
+            <p>
+                <a href="https://twitter.com" target="_blank">Twitter</a> |
+                <a href="https://instagram.com" target="_blank">Instagram</a>
+            </p>
+            <p>Kontak: <a href="mailto:contact@neoblog.com">contact@neoblog.com</a></p>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Pesan terkirim! (Simulasi)');
+            document.getElementById('contactForm').reset();
+        });
+    </script>
+</body>
+</html>

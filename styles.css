@@ -1,0 +1,263 @@
+/* Neo Brutalism: Bold typography, high-contrast colors, heavy shadows */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+body.minimalist {
+    background: #f4f4f4;
+    color: #333;
+}
+
+body.dark, body.dark-mode {
+    background: #222;
+    color: #fff;
+}
+
+/* Navbar */
+.navbar {
+    background: #ff007a !important;
+    border-bottom: 5px solid #000;
+    box-shadow: 8px 8px #000;
+    padding: 15px 0;
+}
+
+.navbar-brand.logo {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.5rem;
+    color: #fff !important;
+    text-shadow: 3px 3px #000;
+}
+
+.nav-link {
+    color: #fff !important;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: #00ffcc !important;
+}
+
+.navbar-toggler {
+    border: 3px solid #000 !important;
+    box-shadow: 3px 3px #000;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.search-bar input {
+    border: 3px solid #000;
+    box-shadow: 4px 4px #000;
+    font-size: 1rem;
+}
+
+/* Foto Profil */
+.profile-avatar {
+    max-width: 150px;
+    max-height: 150px;
+    border: 3px solid #000;
+    box-shadow: 4px 4px #000;
+    border-radius: 10px;
+}
+
+@media (max-width: 576px) {
+    .profile-avatar {
+        max-width: 100px;
+        max-height: 100px;
+    }
+}
+
+/* Hero Section */
+.hero {
+    background: url('hero-bg.jpg') no-repeat center/cover;
+    padding: 60px 0;
+    border-bottom: 5px solid #000;
+}
+
+.hero h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 3.5rem;
+    color: #ff007a;
+    text-shadow: 4px 4px #000;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 10px auto;
+}
+
+/* Custom Button */
+.btn-custom {
+    background: #00ffcc;
+    color: #000;
+    border: 3px solid #000;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.2rem;
+    box-shadow: 5px 5px #000;
+}
+
+.btn-custom:hover {
+    transform: translate(2px, 2px);
+    box-shadow: 3px 3px #000;
+    color: #000;
+}
+
+/* Posts */
+.post-card {
+    background: #fff;
+    color: #000;
+    padding: 20px;
+    border: 3px solid #000;
+    box-shadow: 8px 8px #000;
+    margin-bottom: 20px;
+}
+
+.post-card img {
+    max-width: 100%;
+    border: 3px solid #000;
+    cursor: pointer;
+}
+
+.post-card h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.8rem;
+    margin: 10px 0;
+}
+
+.post-card button {
+    background: #ff007a;
+    color: #fff;
+    border: 3px solid #000;
+    box-shadow: 4px 4px #000;
+}
+
+.post-card button:hover {
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px #000;
+}
+
+/* Article */
+.card {
+    background: #fff;
+    color: #000;
+    border: 3px solid #000;
+    box-shadow: 8px 8px #000;
+    padding: 20px;
+}
+
+.card img {
+    max-width: 100%;
+    border: 3px solid #000;
+    cursor: pointer;
+}
+
+.card h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.5rem;
+}
+
+.reactions button {
+    background: #00ffcc;
+    border: 3px solid #000;
+    box-shadow: 4px 4px #000;
+    margin-right: 10px;
+}
+
+.reactions button.liked {
+    background: #ff007a;
+}
+
+/* Comment */
+.comment-form textarea, input, select {
+    border: 3px solid #000;
+    box-shadow: 4px 4px #000;
+}
+
+.comment, .reply {
+    background: #f0f0f0;
+    padding: 15px;
+    margin: 10px 0;
+    border: 2px solid #000;
+    box-shadow: 4px 4px #000;
+}
+
+.reply {
+    margin-left: 20px;
+    background: #e0e0e0;
+}
+
+.comment img, .reply img {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #000;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+/* Sidebar */
+.widget {
+    background: #fff;
+    color: #000;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 3px solid #000;
+    box-shadow: 6px 6px #000;
+}
+
+.widget img {
+    max-width: 100%;
+    border: 3px solid #000;
+    cursor: pointer;
+}
+
+.widget h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.5rem;
+}
+
+.widget a {
+    color: #ff007a;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.widget a:hover {
+    color: #00ffcc;
+}
+
+/* Footer */
+footer {
+    background: #ff007a;
+    padding: 20px 0;
+    border-top: 5px solid #000;
+    box-shadow: -8px -8px #000;
+}
+
+footer a.text-teal {
+    color: #00ffcc !important;
+}
+
+/* Modal */
+.modal-content {
+    border: 3px solid #000;
+    box-shadow: 8px 8px #000;
+}
+
+@keyframes slideIn {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
